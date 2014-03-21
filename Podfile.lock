@@ -1,0 +1,24 @@
+PODS:
+  - CocoaLumberjack (1.6.5.1):
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.6.5.1)
+  - CocoaLumberjack/Extensions (1.6.5.1):
+    - CocoaLumberjack/Core
+  - JSMessagesViewController (4.0.2):
+    - JSQSystemSoundPlayer
+  - JSQSystemSoundPlayer (1.4.0)
+  - YapDatabase (2.4):
+    - CocoaLumberjack (~> 1.6.3)
+
+DEPENDENCIES:
+  - JSMessagesViewController (~> 4.0)
+  - YapDatabase (~> 2.4)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
+  JSMessagesViewController: 901c4f7b805e0990705d92eee8069562ac85bf9b
+  JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
+  YapDatabase: 3e1159ee9540859342bf2869a86dd9e434548c45
+
+COCOAPODS: 0.29.0
