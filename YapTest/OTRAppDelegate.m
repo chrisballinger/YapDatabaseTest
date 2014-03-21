@@ -8,6 +8,9 @@
 
 #import "OTRAppDelegate.h"
 #import "OTRMessageViewController.h"
+#import "DDLog.h"
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
 
 @implementation OTRAppDelegate
 
@@ -17,6 +20,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[OTRMessageViewController alloc] init];
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "JSMessageData.h"
 
-@interface OTRMessage : NSObject <JSMessageData>
+@interface OTRMessage : NSObject <JSMessageData, NSCoding, NSCopying>
 
 @property (nonatomic, copy, readwrite) NSString *text;
 @property (nonatomic, copy, readwrite) NSString *sender;
 @property (nonatomic, strong, readwrite) NSDate *date;
+@property (nonatomic, copy, readwrite) NSString *uuid;
 
 @end
