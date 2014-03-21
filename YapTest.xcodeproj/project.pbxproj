@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9C8AF1618DBFC61005A535B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF1518DBFC61005A535B /* Foundation.framework */; };
+		D9C8AF1818DBFC61005A535B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF1718DBFC61005A535B /* CoreGraphics.framework */; };
+		D9C8AF1A18DBFC61005A535B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF1918DBFC61005A535B /* UIKit.framework */; };
+		D9C8AF2018DBFC61005A535B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C8AF1E18DBFC61005A535B /* InfoPlist.strings */; };
+		D9C8AF2218DBFC61005A535B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8AF2118DBFC61005A535B /* main.m */; };
+		D9C8AF2618DBFC61005A535B /* OTRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8AF2518DBFC61005A535B /* OTRAppDelegate.m */; };
+		D9C8AF2818DBFC61005A535B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C8AF2718DBFC61005A535B /* Images.xcassets */; };
+		D9C8AF2F18DBFC61005A535B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF2E18DBFC61005A535B /* XCTest.framework */; };
+		D9C8AF3018DBFC61005A535B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF1518DBFC61005A535B /* Foundation.framework */; };
+		D9C8AF3118DBFC61005A535B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C8AF1918DBFC61005A535B /* UIKit.framework */; };
+		D9C8AF3918DBFC61005A535B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C8AF3718DBFC61005A535B /* InfoPlist.strings */; };
+		D9C8AF3B18DBFC61005A535B /* YapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C8AF3A18DBFC61005A535B /* YapTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9C8AF3218DBFC61005A535B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9C8AF0A18DBFC61005A535B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C8AF1118DBFC61005A535B;
+			remoteInfo = YapTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9C8AF1218DBFC61005A535B /* YapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C8AF1518DBFC61005A535B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9C8AF1718DBFC61005A535B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9C8AF1918DBFC61005A535B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9C8AF1D18DBFC61005A535B /* YapTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YapTest-Info.plist"; sourceTree = "<group>"; };
+		D9C8AF1F18DBFC61005A535B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9C8AF2118DBFC61005A535B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9C8AF2318DBFC61005A535B /* YapTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YapTest-Prefix.pch"; sourceTree = "<group>"; };
+		D9C8AF2418DBFC61005A535B /* OTRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTRAppDelegate.h; sourceTree = "<group>"; };
+		D9C8AF2518DBFC61005A535B /* OTRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTRAppDelegate.m; sourceTree = "<group>"; };
+		D9C8AF2718DBFC61005A535B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9C8AF2D18DBFC61005A535B /* YapTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C8AF2E18DBFC61005A535B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D9C8AF3618DBFC61005A535B /* YapTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YapTestTests-Info.plist"; sourceTree = "<group>"; };
+		D9C8AF3818DBFC61005A535B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9C8AF3A18DBFC61005A535B /* YapTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YapTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C8AF0F18DBFC61005A535B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF1818DBFC61005A535B /* CoreGraphics.framework in Frameworks */,
+				D9C8AF1A18DBFC61005A535B /* UIKit.framework in Frameworks */,
+				D9C8AF1618DBFC61005A535B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8AF2A18DBFC61005A535B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF2F18DBFC61005A535B /* XCTest.framework in Frameworks */,
+				D9C8AF3118DBFC61005A535B /* UIKit.framework in Frameworks */,
+				D9C8AF3018DBFC61005A535B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9C8AF0918DBFC61005A535B = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF1B18DBFC61005A535B /* YapTest */,
+				D9C8AF3418DBFC61005A535B /* YapTestTests */,
+				D9C8AF1418DBFC61005A535B /* Frameworks */,
+				D9C8AF1318DBFC61005A535B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C8AF1318DBFC61005A535B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF1218DBFC61005A535B /* YapTest.app */,
+				D9C8AF2D18DBFC61005A535B /* YapTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C8AF1418DBFC61005A535B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF1518DBFC61005A535B /* Foundation.framework */,
+				D9C8AF1718DBFC61005A535B /* CoreGraphics.framework */,
+				D9C8AF1918DBFC61005A535B /* UIKit.framework */,
+				D9C8AF2E18DBFC61005A535B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C8AF1B18DBFC61005A535B /* YapTest */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF2418DBFC61005A535B /* OTRAppDelegate.h */,
+				D9C8AF2518DBFC61005A535B /* OTRAppDelegate.m */,
+				D9C8AF2718DBFC61005A535B /* Images.xcassets */,
+				D9C8AF1C18DBFC61005A535B /* Supporting Files */,
+			);
+			path = YapTest;
+			sourceTree = "<group>";
+		};
+		D9C8AF1C18DBFC61005A535B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF1D18DBFC61005A535B /* YapTest-Info.plist */,
+				D9C8AF1E18DBFC61005A535B /* InfoPlist.strings */,
+				D9C8AF2118DBFC61005A535B /* main.m */,
+				D9C8AF2318DBFC61005A535B /* YapTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9C8AF3418DBFC61005A535B /* YapTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF3A18DBFC61005A535B /* YapTestTests.m */,
+				D9C8AF3518DBFC61005A535B /* Supporting Files */,
+			);
+			path = YapTestTests;
+			sourceTree = "<group>";
+		};
+		D9C8AF3518DBFC61005A535B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C8AF3618DBFC61005A535B /* YapTestTests-Info.plist */,
+				D9C8AF3718DBFC61005A535B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C8AF1118DBFC61005A535B /* YapTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C8AF3E18DBFC61005A535B /* Build configuration list for PBXNativeTarget "YapTest" */;
+			buildPhases = (
+				D9C8AF0E18DBFC61005A535B /* Sources */,
+				D9C8AF0F18DBFC61005A535B /* Frameworks */,
+				D9C8AF1018DBFC61005A535B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YapTest;
+			productName = YapTest;
+			productReference = D9C8AF1218DBFC61005A535B /* YapTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9C8AF2C18DBFC61005A535B /* YapTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C8AF4118DBFC61005A535B /* Build configuration list for PBXNativeTarget "YapTestTests" */;
+			buildPhases = (
+				D9C8AF2918DBFC61005A535B /* Sources */,
+				D9C8AF2A18DBFC61005A535B /* Frameworks */,
+				D9C8AF2B18DBFC61005A535B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C8AF3318DBFC61005A535B /* PBXTargetDependency */,
+			);
+			name = YapTestTests;
+			productName = YapTestTests;
+			productReference = D9C8AF2D18DBFC61005A535B /* YapTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C8AF0A18DBFC61005A535B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OTR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ChatSecure;
+				TargetAttributes = {
+					D9C8AF2C18DBFC61005A535B = {
+						TestTargetID = D9C8AF1118DBFC61005A535B;
+					};
+				};
+			};
+			buildConfigurationList = D9C8AF0D18DBFC61005A535B /* Build configuration list for PBXProject "YapTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9C8AF0918DBFC61005A535B;
+			productRefGroup = D9C8AF1318DBFC61005A535B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C8AF1118DBFC61005A535B /* YapTest */,
+				D9C8AF2C18DBFC61005A535B /* YapTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C8AF1018DBFC61005A535B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF2018DBFC61005A535B /* InfoPlist.strings in Resources */,
+				D9C8AF2818DBFC61005A535B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8AF2B18DBFC61005A535B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF3918DBFC61005A535B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C8AF0E18DBFC61005A535B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF2618DBFC61005A535B /* OTRAppDelegate.m in Sources */,
+				D9C8AF2218DBFC61005A535B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C8AF2918DBFC61005A535B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C8AF3B18DBFC61005A535B /* YapTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9C8AF3318DBFC61005A535B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9C8AF1118DBFC61005A535B /* YapTest */;
+			targetProxy = D9C8AF3218DBFC61005A535B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9C8AF1E18DBFC61005A535B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C8AF1F18DBFC61005A535B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9C8AF3718DBFC61005A535B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C8AF3818DBFC61005A535B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9C8AF3C18DBFC61005A535B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9C8AF3D18DBFC61005A535B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C8AF3F18DBFC61005A535B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YapTest/YapTest-Prefix.pch";
+				INFOPLIST_FILE = "YapTest/YapTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9C8AF4018DBFC61005A535B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YapTest/YapTest-Prefix.pch";
+				INFOPLIST_FILE = "YapTest/YapTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D9C8AF4218DBFC61005A535B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YapTest.app/YapTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YapTest/YapTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YapTestTests/YapTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D9C8AF4318DBFC61005A535B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YapTest.app/YapTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YapTest/YapTest-Prefix.pch";
+				INFOPLIST_FILE = "YapTestTests/YapTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C8AF0D18DBFC61005A535B /* Build configuration list for PBXProject "YapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8AF3C18DBFC61005A535B /* Debug */,
+				D9C8AF3D18DBFC61005A535B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C8AF3E18DBFC61005A535B /* Build configuration list for PBXNativeTarget "YapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8AF3F18DBFC61005A535B /* Debug */,
+				D9C8AF4018DBFC61005A535B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9C8AF4118DBFC61005A535B /* Build configuration list for PBXNativeTarget "YapTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C8AF4218DBFC61005A535B /* Debug */,
+				D9C8AF4318DBFC61005A535B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9C8AF0A18DBFC61005A535B /* Project object */;
+}
