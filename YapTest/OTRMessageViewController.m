@@ -54,7 +54,7 @@ static NSString * const kOTRMessagesView = @"messagesView";
 
 - (void) setupDatabase {
     NSString *databasePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"db.sqlite"];
-    self.database = [[YapDatabase alloc] initWithPath:databasePath];
+    self.database = [[YapDatabase alloc] initWithPath:databasePath objectSerializer:NULL objectDeserializer:NULL metadataSerializer:NULL metadataDeserializer:NULL objectSanitizer:NULL metadataSanitizer:NULL passphrase:@"test"];
     self.mainConnection = [self.database newConnection];
     self.backgroundConnection = [self.database newConnection];
     [self.mainConnection beginLongLivedReadTransaction];

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34A276EE-5579-4339-8B39-8ACF9CCCC8CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YapTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>52571947-4CBF-4AE0-8EAE-539FB1F8E0A8</key>
+		<string>ssh://github.com/chrisballinger/YapDatabaseTest.git</string>
+		<key>A04A57A7-B0CF-4F26-A2DF-D7B4E13BC62C</key>
+		<string>ssh://github.com/chrisballinger/YapDatabase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YapTest.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>52571947-4CBF-4AE0-8EAE-539FB1F8E0A8</key>
+		<string>..</string>
+		<key>A04A57A7-B0CF-4F26-A2DF-D7B4E13BC62C</key>
+		<string>../Submodules/YapDatabase</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chrisballinger/YapDatabaseTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>52571947-4CBF-4AE0-8EAE-539FB1F8E0A8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A04A57A7-B0CF-4F26-A2DF-D7B4E13BC62C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YapDatabase</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>52571947-4CBF-4AE0-8EAE-539FB1F8E0A8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YapTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
