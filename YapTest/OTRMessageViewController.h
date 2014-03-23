@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JSMessagesViewController.h"
+#import "JSQMessagesViewController.h"
 
-@interface OTRMessageViewController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource>
+@interface OTRMessageViewController : JSQMessagesViewController <JSQMessagesViewControllerDelegate>
 
 @end

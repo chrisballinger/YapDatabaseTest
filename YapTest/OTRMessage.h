@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSMessageData.h"
+#import "JSQMessage.h"
 
-@interface OTRMessage : NSObject <JSMessageData, NSCoding, NSCopying>
+@interface OTRMessage : JSQMessage <NSCoding, NSCopying>
 
-@property (nonatomic, copy, readwrite) NSString *text;
-@property (nonatomic, copy, readwrite) NSString *sender;
-@property (nonatomic, strong, readwrite) NSDate *date;
-@property (nonatomic, copy, readwrite) NSString *uuid;
+@property (nonatomic, copy, readwrite) NSString *uniqueIdentifier;
+
+- (instancetype)initWithText:(NSString *)text
+                      sender:(NSString *)sender
+                        date:(NSDate *)date
+            uniqueIdentifier:(NSString*)uniqueIdentifier;
 
 @end
