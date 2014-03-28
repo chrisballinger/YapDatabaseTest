@@ -11,6 +11,7 @@ PODS:
   - SQLCipher (3.0.1):
     - SQLCipher/standard
   - SQLCipher/standard (3.0.1)
+  - SSKeychain (1.2.1)
   - YapDatabase/common (2.4):
     - CocoaLumberjack (~> 1.6.3)
   - YapDatabase/SQLCipher (2.4):
@@ -19,6 +20,7 @@ PODS:
 
 DEPENDENCIES:
   - JSMessagesViewController (~> 4.0)
+  - SSKeychain
   - YapDatabase/SQLCipher (from `Submodules/YapDatabase`)
 
 EXTERNAL SOURCES:
@@ -30,6 +32,7 @@ SPEC CHECKSUMS:
   JSMessagesViewController: 901c4f7b805e0990705d92eee8069562ac85bf9b
   JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
   SQLCipher: 006f125d9b85e32ee6242b41adb68f0f5cbc4aa9
+  SSKeychain: d18926838c2e7cd342e2a49e9f869858e49f035a
   YapDatabase: 9b7e386750816fedd99f552df14341966f6cee96
 
 COCOAPODS: 0.29.0
