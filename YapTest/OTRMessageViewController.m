@@ -31,19 +31,24 @@ static NSString * const kOTRMessagesView = @"messagesView";
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     [self setupDatabase];
     [self setupDatabaseView];
     self.delegate = self;
-    self.collectionView.dataSource = self;
+    self.dataSource = self;
+    [super viewDidLoad]; // this call to super has to be after setting the delegate and dataSource
+
+    //[[JSBubbleView appearance] setFont:/* your font for the message bubbles */];
     
     self.title = @"Test";
+    
+    self.messageInputView.textView.placeHolder = @"Write it up";
     
     self.sender = @"Alice";
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.tableView reloadData];
     [self scrollToBottomAnimated:animated];
 }
 
@@ -123,27 +128,37 @@ static NSString * const kOTRMessagesView = @"messagesView";
 }
 
 #pragma mark JSMessagesViewDelegate
-
-- (void)messagesViewController:(JSQMessagesViewController *)viewController
-                didSendMessage:(JSQMessage *)message {
+- (void) didSendText:(NSString *)text fromSender:(NSString *)sender onDate:(NSDate *)date {
+    DDLogInfo(@"Did send text: %@ from sender %@ on date %@", text, sender, date);
+    
     [self.backgroundConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
-        OTRMessage *otrMessage = [[OTRMessage alloc] initWithText:message.text sender:message.sender date:message.date];
-        [transaction setObject:otrMessage forKey:otrMessage.uniqueIdentifier inCollection:kOTRMessagesCollection];
+        OTRMessage *message = [[OTRMessage alloc] init];
+        message.text = text;
+        message.sender = sender;
+        message.date = date;
+        [transaction setObject:message forKey:message.uuid inCollection:kOTRMessagesCollection];
     } completionBlock:^{
-        [self finishSending];
+        [self finishSend];
         [self scrollToBottomAnimated:YES];
     }];
 }
 
-- (void)messagesViewController:(JSQMessagesViewController *)viewController
-       didPressAccessoryButton:(UIButton *)sender {
-    DDLogInfo(@"Pressed accessory button: %@", sender);
+- (JSBubbleMessageType)messageTypeForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return JSBubbleMessageTypeOutgoing;
 }
 
-#pragma mark JSQMessagesCollectionViewDataSource
+- (UIImageView *)bubbleImageViewWithType:(JSBubbleMessageType)type
+                       forRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor whiteColor]];
+}
 
-- (id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView
-           messageForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (JSMessageInputViewStyle)inputViewStyle {
+    return JSMessageInputViewStyleFlat;
+}
+
+#pragma mark JSMessagesViewData
+
+- (id<JSMessageData>)messageForRowAtIndexPath:(NSIndexPath *)indexPath {
     __block OTRMessage *message = nil;
     [self.mainConnection readWithBlock:^(YapDatabaseReadTransaction *transaction){
         message = [[transaction ext:kOTRMessagesView] objectAtIndex:indexPath.row inGroup:kOTRMessagesGroup];
@@ -151,30 +166,18 @@ static NSString * const kOTRMessagesView = @"messagesView";
     return message;
 }
 
-#pragma mark UICollectionViewDelegate
+- (UIImageView *)avatarImageViewForRowAtIndexPath:(NSIndexPath *)indexPath sender:(NSString *)sender {
+    return nil;
+}
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+#pragma mark UITableViewDataSource
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     __block NSInteger numberOfMessages = 0;
     [self.mainConnection readWithBlock:^(YapDatabaseReadTransaction *transaction){
         numberOfMessages = [[transaction ext:kOTRMessagesView] numberOfKeysInGroup:kOTRMessagesGroup];
-        }];
+    }];
     return numberOfMessages;
 }
-
-- (UIImageView *)collectionView:(JSQMessagesCollectionView *)collectionView
-                         layout:(JSQMessagesCollectionViewFlowLayout *)layout bubbleImageViewForItemAtIndexPath:(NSIndexPath *)indexPath
-                         sender:(NSString *)sender
-{
-    return nil;
-}
-
-- (UIImageView *)collectionView:(JSQMessagesCollectionView *)collectionView
-                         layout:(JSQMessagesCollectionViewFlowLayout *)layout avatarImageViewForItemAtIndexPath:(NSIndexPath *)indexPath
-                         sender:(NSString *)sender
-{
-    return nil;
-}
-
 
 @end

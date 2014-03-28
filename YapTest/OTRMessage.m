@@ -8,21 +8,17 @@
 
 #import "OTRMessage.h"
 
-static NSString * const kOTRMessageUniqueIdentifier = @"kOTRMessageUniqueIdentifier";
+static NSString * const kOTRMessageText = @"kOTRMessageText";
+static NSString * const kOTRMessageSender = @"kOTRMessageSender";
+static NSString * const kOTRMessageDate = @"kOTRMessageDate";
+static NSString * const kOTRMessageUUID = @"kOTRMessageUUID";
 
 
 @implementation OTRMessage
 
-- (instancetype)initWithText:(NSString *)text
-                      sender:(NSString *)sender
-                        date:(NSDate *)date {
-    NSString *uniqueIdentifier = [[NSUUID UUID] UUIDString];
-    return [self initWithText:text sender:sender date:date uniqueIdentifier:uniqueIdentifier];
-}
-
-- (instancetype) initWithText:(NSString *)text sender:(NSString *)sender date:(NSDate *)date uniqueIdentifier:(NSString *)uniqueIdentifier {
-    if (self = [super initWithText:text sender:sender date:date]) {
-        _uniqueIdentifier = uniqueIdentifier;
+- (instancetype) init {
+    if (self = [super init]) {
+        self.uuid = [[NSUUID UUID] UUIDString];
     }
     return self;
 }
@@ -30,16 +26,21 @@ static NSString * const kOTRMessageUniqueIdentifier = @"kOTRMessageUniqueIdentif
 #pragma mark NSCoding
 - (instancetype)initWithCoder:(NSCoder *)decoder // NSCoding deserialization
 {
-    if (self = [super initWithCoder:decoder]) {
-        self.uniqueIdentifier = [decoder decodeObjectForKey:kOTRMessageUniqueIdentifier];
+    if (self = [super init]) {
+        self.text = [decoder decodeObjectForKey:kOTRMessageText];
+        self.sender = [decoder decodeObjectForKey:kOTRMessageSender];
+        self.date = [decoder decodeObjectForKey:kOTRMessageDate];
+        self.uuid = [decoder decodeObjectForKey:kOTRMessageUUID];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder // NSCoding serialization
 {
-    [super encodeWithCoder:encoder];
-    [encoder encodeObject:self.uniqueIdentifier forKey:kOTRMessageUniqueIdentifier];
+    [encoder encodeObject:self.text forKey:kOTRMessageText];
+    [encoder encodeObject:self.sender forKey:kOTRMessageSender];
+    [encoder encodeObject:self.date forKey:kOTRMessageDate];
+    [encoder encodeObject:self.uuid forKey:kOTRMessageUUID];
 }
 
 #pragma mark NSCopying
@@ -49,7 +50,6 @@ static NSString * const kOTRMessageUniqueIdentifier = @"kOTRMessageUniqueIdentif
         copy.text = self.text;
         copy.sender = self.sender;
         copy.date = self.date;
-        copy.uniqueIdentifier = self.uniqueIdentifier;
     }
     return copy;
 }

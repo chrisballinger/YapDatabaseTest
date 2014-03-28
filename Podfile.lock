@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
   DAKeyboardControl: 219d6e32b9343eb85151255c43b1f238d8f0bbf7
-  JSQMessagesViewController: ce744e2e1990c10a6b194e65399c49db8f926857
+  JSQMessagesViewController: 9c135e2e666c72da415ed2debe72875599ad06b6
   JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
   SQLCipher: 006f125d9b85e32ee6242b41adb68f0f5cbc4aa9
   YapDatabase: 9b7e386750816fedd99f552df14341966f6cee96
