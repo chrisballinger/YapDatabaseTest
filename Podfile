@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '6.0'
 
 pod 'YapDatabase/SQLCipher', :path => 'Submodules/YapDatabase'
-pod 'JSQMessagesViewController', :path => 'Submodules/JSQMessagesViewController'
+pod 'JSMessagesViewController', '~> 4.0'

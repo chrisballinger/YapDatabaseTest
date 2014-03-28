@@ -1,6 +1,3 @@
 [submodule "Submodules/YapDatabase"]
 	path = Submodules/YapDatabase
 	url = git@github.com:chrisballinger/YapDatabase.git
-[submodule "Submodules/JSQMessagesViewController"]
-	path = Submodules/JSQMessagesViewController
-	url = git@github.com:chrisballinger/MessagesTableViewController.git

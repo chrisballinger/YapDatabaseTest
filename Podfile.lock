@@ -5,9 +5,7 @@ PODS:
   - CocoaLumberjack/Core (1.6.5.1)
   - CocoaLumberjack/Extensions (1.6.5.1):
     - CocoaLumberjack/Core
-  - DAKeyboardControl (2.3.0)
-  - JSQMessagesViewController (5.0):
-    - DAKeyboardControl (~> 2.0)
+  - JSMessagesViewController (4.0.2):
     - JSQSystemSoundPlayer
   - JSQSystemSoundPlayer (1.4.0)
   - SQLCipher (3.0.1):
@@ -20,19 +18,16 @@ PODS:
     - YapDatabase/common
 
 DEPENDENCIES:
-  - JSQMessagesViewController (from `Submodules/JSQMessagesViewController`)
+  - JSMessagesViewController (~> 4.0)
   - YapDatabase/SQLCipher (from `Submodules/YapDatabase`)
 
 EXTERNAL SOURCES:
-  JSQMessagesViewController:
-    :path: Submodules/JSQMessagesViewController
   YapDatabase:
     :path: Submodules/YapDatabase
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
-  DAKeyboardControl: 219d6e32b9343eb85151255c43b1f238d8f0bbf7
-  JSQMessagesViewController: 9c135e2e666c72da415ed2debe72875599ad06b6
+  JSMessagesViewController: 901c4f7b805e0990705d92eee8069562ac85bf9b
   JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
   SQLCipher: 006f125d9b85e32ee6242b41adb68f0f5cbc4aa9
   YapDatabase: 9b7e386750816fedd99f552df14341966f6cee96
